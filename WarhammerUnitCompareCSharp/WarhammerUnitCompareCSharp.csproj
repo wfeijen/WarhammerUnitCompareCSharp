@@ -53,9 +53,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="SimpleLogger.cs" />
     <Compile Include="Weapon.cs" />
     <Compile Include="WeaponList.cs" />
+=======
+>>>>>>> c389b773b92dea0b26d6998fa29e11e6319a39ed
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
