@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WfeijenWH;
 
 namespace WarhammerUnitCompareCSharp
 {
@@ -16,7 +15,6 @@ namespace WarhammerUnitCompareCSharp
         public Form1()
         {
             InitializeComponent();
-            WeaponList weaponList=new WeaponList("");
         }
     }
 }
