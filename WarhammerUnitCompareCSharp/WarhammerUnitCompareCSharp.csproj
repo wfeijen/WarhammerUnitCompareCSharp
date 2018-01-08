@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CBE9D504-27DE-4DC9-AEC0-B0E61DA97061}</ProjectGuid>
+    <ProjectGuid>{E7C78E87-C364-4C83-9B2E-F9981E85FE55}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>WarhammerUnitCompareCSharp</RootNamespace>
     <AssemblyName>WarhammerUnitCompareCSharp</AssemblyName>
@@ -53,12 +53,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
     <Compile Include="SimpleLogger.cs" />
     <Compile Include="Weapon.cs" />
     <Compile Include="WeaponList.cs" />
-=======
->>>>>>> c389b773b92dea0b26d6998fa29e11e6319a39ed
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

@@ -16,5 +16,11 @@ namespace WarhammerUnitCompareCSharp
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            WeaponList weaponList = new WeaponList("C:/Users/wfeij/Dropbox/WH8/Vergelijken units/Weapons.csv");
+            int i = 1;
+        }
     }
 }
