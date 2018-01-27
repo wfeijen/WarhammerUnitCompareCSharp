@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.IO;
 
 namespace WarhammerUnitCompareCSharp
 {
-
-    public class WeaponList : Dictionary<string, Weapon>
+    public class UnitList : Dictionary<string, Unit>
     {
-        public WeaponList(string fileName)
+        public UnitList(string fileName)
         {
             using (var reader = new StreamReader(fileName))
             {
@@ -15,18 +17,19 @@ namespace WarhammerUnitCompareCSharp
                 while (!reader.EndOfStream)
                 {
                     line = reader.ReadLine();
-                    Weapon weapon = new Weapon(line);
+                    Unit unit = new Unit(line);
                     try
                     {
-                        this.Add(weapon._name, weapon);
+                        this.Add(unit._Unit, unit);
                     }
                     catch (System.ArgumentException e)
                     {
                         SimpleLogger sl = new SimpleLogger("WarhammerUnitCompareCSharp.log", true);
-                        sl.Error("Wapen " + weapon._name + " komt meerdere keren voor.");
+                        sl.Error("Wapen " + unit._Unit + " komt meerdere keren voor.");
                     }
                 }
             }
         }
+
     }
 }
